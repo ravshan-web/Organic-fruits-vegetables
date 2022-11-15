@@ -1,0 +1,111 @@
+#explore {
+    margin-top: 145px;
+    background: #09A66D0D;
+    min-height: 832px;
+}
+
+.explore-inner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 88px;
+}
+
+.left-side-img-wrapper {
+    width: 600px;
+    height: 600px;
+}
+
+
+// RIGHT SIDE
+
+.right-side {
+    padding: 31px 5.5px 0 50px;
+
+    h2 {
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 90px;
+    }
+
+    p {
+        padding-top: 20px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        color: #555555;
+    }
+
+    .exploring {
+
+        a {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 178px;
+            margin: 40px 0;
+        }
+
+        p {
+            cursor: pointer;
+            font-weight: 500;
+            color: #222222;
+            font: 400 normal 18px;
+            position: relative;
+            padding: 0;
+        }
+
+        .explore-link p::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 1.5px;
+            bottom: 0;
+            left: 0;
+            background-color: #09A66D;
+            transform-origin: bottom left;
+            transition: transform 0.1s ease-out;
+        }
+
+        .explore-link:hover p::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+
+        span {
+            cursor: pointer;
+            display: block;
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background: #09A66D;
+            position: relative;
+
+            i {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                margin: 0 auto;
+                color: white;
+                font-size: 32px;
+            }
+        }
+    }
+}
+
+.exploe-leaves-img {
+    z-index: -1;
+    position: absolute;
+    right: -10%;
+    bottom: -25%;
+
+    img {
+        background-size: 413.77px, 397.19px;
+    }
+}
